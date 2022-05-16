@@ -1,0 +1,51 @@
+<!--pages/home-music/index.wxml-->
+
+<van-search
+  disabled
+  bind:click-input="handleSearch"
+  background="#fafafa"
+  shape="round"
+  placeholder="搜索您想听的歌曲吧">
+</van-search>
+
+<swiper class="swiperDiv"
+  autoplay="true"
+  circular="true"
+  indicator-dots="true"
+  indicator-color="#fff"
+  indicator-active-color="red"
+  style="height: {{swiperHeight}}px;">
+  <block wx:for="{{bannerList}}" wx:key="bannerId">
+    <swiper-item class="swiper-item">
+      <image class="swiper-image" 
+        src="{{item.pic}}"
+        bindload="handleImgLoaded"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- <view class="top-song">
+  <more-header title="巅峰榜" showRight="{{false}}"></more-header>
+  <view>
+    <block wx:for="{{topList}}" wx:key="id">
+      <song-item1 item="{{item}}"></song-item1>
+    </block>
+  </view>
+</view> -->
+
+<view class="recommend-song">
+  <more-header title="推荐歌曲" ></more-header>
+  <view>
+    <block wx:for="{{recommendList}}" wx:key="id">
+      <song-item1 item="{{item}}"></song-item1>
+    </block>
+  </view>
+</view>
+
+<!-- 歌单区域 -->
+<song-menu title="热门歌单" songList="{{hotList}}"></song-menu>
+<song-menu title="推荐歌单" songList="{{topList}}"></song-menu>
+
+
+
+

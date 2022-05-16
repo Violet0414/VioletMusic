@@ -1,0 +1,64 @@
+/* pages/detail-video/index.wxss */
+page {
+  padding-top: 450rpx;
+}
+
+.myVideo {
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 9;
+}
+
+.vedioInfo {
+  margin-bottom: 10rpx;
+}
+
+.videoName {
+  font-size: 40rpx;
+}
+
+.videoArt {
+  font-size: 35rpx;
+  color: #585858;
+}
+
+
+.item {
+  width: 100%;
+  margin-bottom: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.album {
+  border-radius: 12rpx;
+}
+
+
+.videoImg {
+  height: 200rpx;
+  width: 300rpx;
+}
+
+.itemInfo {
+  position: absolute;
+  float: right;
+  margin-left: 42%;
+  margin-top: -26%;
+}
+
+.itemDurations {
+  position: absolute;
+  padding-left: 260rpx;
+  margin-top: 5%;
+}
+
+.itemTime {
+  position: absolute;
+  margin-left: 0%;
+  margin-top: 5%;
+}
+
+

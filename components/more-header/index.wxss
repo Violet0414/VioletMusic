@@ -1,0 +1,19 @@
+/* components/more-header/index.wxss */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35rpx;
+  margin-bottom: 35rpx;
+}
+
+.header .title {
+  font-size: 45rpx;
+  font-weight: 700;
+}
+
+.header .right {
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  color: #777;
+}

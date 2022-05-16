@@ -1,0 +1,7 @@
+<!--components/more-header/index.wxml-->
+<view class="header">
+  <view class="title">{{title}}</view>
+  <view class="right" wx:if="{{showRight}}">
+    <text>{{rightText}}>></text>
+  </view>
+</view>

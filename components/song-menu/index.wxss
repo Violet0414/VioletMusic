@@ -1,0 +1,20 @@
+/* components/song-menu/index.wxss */
+
+.menuList {
+  position: relative;
+  left: -20rpx;
+  white-space: nowrap;
+  width: 100vw;
+}
+
+.menuItem {
+  display: inline-block;
+  height: 230rpx;
+  width: 230rpx;
+  margin-left: 20rpx;
+}
+
+.menuItem:last-of-type {
+  margin-right: 20rpx;
+}
+

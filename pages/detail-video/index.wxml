@@ -1,0 +1,24 @@
+<!--pages/detail-video/index.wxml-->
+<wxs src="../../utils/format.wxs" module="format"></wxs>
+<view class="outside">
+  <video
+  class="myVideo"
+  src="{{mvURLinfo.url}}">
+  </video>
+  <view class="vedioInfo">
+    <view class="videoName">{{mvDetail.name}}</view>
+    <view class="videoArt">{{mvDetail.artistName}}</view>
+    <view class="videoDetail">▷{{format.formatCount(mvDetail.playCount)}}播放量 - {{mvDetail.publishTime}}</view>
+  </view>
+  <view class="item" wx:for="{{relatedVideos}}" wx:key="vid">
+    <view class="album">
+      <image class="videoImg" src="{{item.coverUrl}}"></image>
+    
+      <view class="itemInfo">
+        <view class="itemTitle">{{item.title}}</view>
+        <view class="itemDurations">⏰{{format.formatDuration(item.durationms)}}</view>
+        <view class="itemTime">🎥{{format.formatCount(item.playTime)}}</view>
+      </view>
+    </view>
+  </view>
+</view>
