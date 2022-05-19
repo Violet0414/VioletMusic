@@ -1,0 +1,6 @@
+<!--pages/detial-songs/index.wxml-->
+<view>
+  <view class="songList" wx:for="{{showList}}" wx:key="id">
+    {{item.name}}
+  </view>
+</view>

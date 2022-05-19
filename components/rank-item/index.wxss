@@ -1,0 +1,48 @@
+/* components/rank-item/index.wxss */
+
+.rankItem {
+  width: 100%;
+  margin-top: 15rpx;
+  background-color: #ffffff;
+  border: #949494;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.songList {
+  font-size: 40rpx;
+  padding: 10rpx;
+  margin: 10rpx;
+  width: 55%;
+  white-space: nowrap;
+}
+
+.titleName {
+  font-size: 40rpx;
+  font-weight: bold;
+  text-align: left;
+}
+
+.itemName {
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.artName {
+  text-align: end;
+  font-size: 30rpx;
+  color: #6b6b6b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.image {
+  width: 260rpx;
+  height: 210rpx;
+  border-radius: 30rpx;
+  margin: auto;
+}

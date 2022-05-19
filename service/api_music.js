@@ -6,6 +6,7 @@ export function getBanners() {
   })
 }
 
+
 export function getRecommend(idx) {
   return myRequest.get("/top/list", {
     idx

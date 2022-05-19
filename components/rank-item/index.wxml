@@ -1,0 +1,15 @@
+<!--components/rank-item/index.wxml-->
+<view class="rankItem">
+  <view class="songList">
+    <view class="titleName">{{title}}</view>
+    <block wx:for="{{songItem}}" wx:key="id">
+      <view class="itemName">{{item.name}}
+        <view class="artName">
+          {{item.ar[0].name}}
+        </view>
+      </view>
+    </block>
+  </view>
+  <image class="image" src="{{songItem[0].al.picUrl}}"></image>
+</view>
+

@@ -1,4 +1,4 @@
-<!--pages/home-music/index.wxml-->
+<!-- pages/home-music/index.wxml -->
 
 <van-search
   disabled
@@ -24,17 +24,8 @@
   </block>
 </swiper>
 
-<!-- <view class="top-song">
-  <more-header title="巅峰榜" showRight="{{false}}"></more-header>
-  <view>
-    <block wx:for="{{topList}}" wx:key="id">
-      <song-item1 item="{{item}}"></song-item1>
-    </block>
-  </view>
-</view> -->
-
-<view class="recommend-song">
-  <more-header title="推荐歌曲" ></more-header>
+<view class="recommend-song" wx:if="{{recommendList.length > 0}}">
+  <more-header title="推荐歌曲" bind:click="handleMoreClick"></more-header>
   <view>
     <block wx:for="{{recommendList}}" wx:key="id">
       <song-item1 item="{{item}}"></song-item1>
@@ -43,9 +34,14 @@
 </view>
 
 <!-- 歌单区域 -->
-<song-menu title="热门歌单" songList="{{hotList}}"></song-menu>
-<song-menu title="推荐歌单" songList="{{topList}}"></song-menu>
+<song-menu title="热门歌单" songList="{{hotList}}" wx:if="{{hotList.length > 0}}"></song-menu>
+<song-menu title="推荐歌单" songList="{{topList}}" wx:if="{{topList.length > 0}}"></song-menu>
 
-
+<view class="ranking">
+  <more-header title="巅峰榜" showRight="{{false}}"></more-header>
+  <rank-item title="热歌榜" songItem="{{hotSong}}" bindtap="handleRankClick"></rank-item>
+  <rank-item title="飙升榜" songItem="{{upSong}}" bindtap="handleRankClick"></rank-item>
+  <rank-item title="新歌榜" songItem="{{newSong}}" bindtap="handleRankClick"></rank-item>
+</view>
 
 
