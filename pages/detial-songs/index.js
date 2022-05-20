@@ -12,11 +12,10 @@ Page({
     if(rankName == 'moreList') {
       getRecommend(0).then(res => {
         this.setData({showList: res.playlist.tracks.slice(0, 30)})
-        console.log(this.data.showList);
       })
     }else {
       getRecommend(1).then(res => {
-        this.setData({showList: res.playlist.tracks/slice(0, 30)})
+        this.setData({showList: res.playlist.tracks.slice(0, 30)})
       })
     }
   },

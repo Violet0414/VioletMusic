@@ -1,0 +1,38 @@
+/* components/song-item2/index.wxss */
+page {
+  padding: 12rpx;
+}
+
+.item {
+  margin-bottom: 35rpx;
+}
+
+.index {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top: 15rpx;
+  width: 50rpx;
+  height: 50rpx;
+  font-size: 35rpx;
+  float: left;
+  margin-right: 20rpx;
+}
+
+.source {
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  width: 55rpx;
+  height: 55rpx;
+  margin-right: 10rpx;
+}
+
+.name {
+  font-size: 35rpx;
+}
+
+

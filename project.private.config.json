@@ -17,8 +17,8 @@
         },
         {
           "name": "",
-          "pathName": "pages/home-music/index",
-          "query": "",
+          "pathName": "pages/detial-songs/index",
+          "query": "rankName=moreList",
           "launchMode": "default",
           "scene": null
         }

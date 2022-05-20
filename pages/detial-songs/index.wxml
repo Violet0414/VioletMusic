@@ -1,6 +1,7 @@
 <!--pages/detial-songs/index.wxml-->
 <view>
+  <more-header title="音乐榜单" showRight="{{false}}"></more-header>
   <view class="songList" wx:for="{{showList}}" wx:key="id">
-    {{item.name}}
+    <song-item2 item="{{item}}" index="{{index + 1}}"></song-item2>
   </view>
 </view>
