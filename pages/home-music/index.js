@@ -72,7 +72,7 @@ Page({
 
   getDetialPage(rankName) {
     wx.navigateTo({
-      url: `/pages/detial-songs/index?rankName=${rankName}`,
+      url: `/pages/detial-songs/index?rankName=${rankName}&type=rank`,
     })
   },
 

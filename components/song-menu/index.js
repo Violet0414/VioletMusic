@@ -28,6 +28,12 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    handleMenuItemClick(event) {
+      const item = event.currentTarget.dataset.item
+      console.log(item);
+      wx.navigateTo({
+        url: `/pages/detial-songs/index?id=${item.id}&type=menu`,
+      })
+    }
   }
 })

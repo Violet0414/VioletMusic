@@ -25,6 +25,11 @@ page {
   align-items: center;
 }
 
+.space {
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+}
+
 .img {
   width: 55rpx;
   height: 55rpx;
