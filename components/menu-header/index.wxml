@@ -1,0 +1,29 @@
+<!--components/menu-header/index.wxml-->
+<view class="header">
+      <image class="bgImg" mode="aspectFill" src="{{topData.coverImgUrl}}"></image>
+      <view class="bgCover"></view>
+      <!-- 内容 -->
+      <view class="content">
+        <image class="menuImg" mode="aspectFill" src="{{topData.coverImgUrl}}"></image>
+        <view class="info">
+          <view class="title">{{topData.name}}</view>
+          <view class="anthor">
+            <image class="avatar" src="{{topData.creator.avatarUrl}}"></image>
+          
+            <text class="nickName">{{topData.creator.nickname}}</text>
+            
+          </view>
+          <view class="desc">简介：{{topData.description}}</view>
+        </view>
+      </view>
+      <!-- 分享 -->
+      <!-- <view class="bottomInfo">
+        <view class="favor">
+          <image class="icon" mode="widthFix"></image>
+          <text class="text">{{topData.playCount}}</text>
+        </view>
+        <view class="share">
+          <image class="icon" mode="widthFix"></image>
+        </view>
+      </view> -->
+    </view>

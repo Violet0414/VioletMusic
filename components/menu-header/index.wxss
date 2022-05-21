@@ -1,0 +1,89 @@
+/* components/menu-header/index.wxss */
+
+.header {
+   position: relative;
+   display: flex;
+   margin-bottom: 30rpx;
+   border-radius: 20rpx;
+   overflow: hidden;
+   height: 450rpx;
+   color: #fff;
+}
+
+.header .bgImg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} 
+
+.header .bgCover {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  backdrop-filter: blur(5px);
+}
+
+.content {
+  display: flex;
+  margin-top: 60rpx;
+  padding: 0 20rpx;
+}
+
+.content .menuImg {
+  margin-top: 20rpx;
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 16rpx;
+}
+
+.content .info {
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  margin-left: 20rpx;
+  font-size: 35rpx;
+}
+
+.anthor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content .anthor .avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 35rpx;
+  margin-top: 30rpx;
+  margin-left: 15rpx;
+  float: left;
+}
+
+.nickName {
+  font-size: 32rpx;
+  margin-left: 30rpx;
+}
+
+.content .info .desc {
+  position: absolute;
+  bottom: 100rpx;
+  left: 10rpx;
+  width: 100%;
+  font-size: 28rpx;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

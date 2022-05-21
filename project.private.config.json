@@ -17,7 +17,7 @@
         },
         {
           "name": "",
-          "pathName": "pages/home-music/index",
+          "pathName": "pages/detail-search/index",
           "query": "rankName=moreList",
           "launchMode": "default",
           "scene": null

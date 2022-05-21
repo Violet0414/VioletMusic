@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "more-header": "/components/more-header/index",
-    "song-item2": "/components/song-item2/index"
+    "song-item2": "/components/song-item2/index",
+    "menu-header": "/components/menu-header/index"
   }
 }

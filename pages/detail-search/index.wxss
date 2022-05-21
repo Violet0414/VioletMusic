@@ -1,1 +1,42 @@
 /* pages/detail-search/index.wxss */
+page{
+  padding: 0 20rpx;
+}
+
+.title {
+  font-size: 45rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+}
+
+.tag {
+  float: left;
+  padding: 15rpx;
+  margin: 10rpx;
+  box-shadow: 0 2rpx 4rpx rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+  border-radius: 30rpx;
+  background-color: rgb(255, 255, 255);
+}
+
+.tag:first-of-type {
+  color: #26ce8a;
+}
+
+.sTitle {
+  font-size: 45rpx;
+  font-weight: bold;
+  color: #26ce8a;
+  margin-bottom: 30rpx;
+}
+
+.img {
+  height: 40rpx;
+  width: 40rpx;
+  padding-right: 10rpx;
+  padding-top: 10rpx;
+}
+
+.item {
+  margin-top: 30rpx;
+  font-size: 40rpx;
+}
