@@ -10,3 +10,9 @@ export function getSearchWords(keywords) {
     type: "mobile"
   })
 }
+
+export function getSearchSong(keywords) {
+  return myRequest.get("/search", {
+    keywords,
+  })
+}

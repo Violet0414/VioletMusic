@@ -17,7 +17,8 @@
   style="height: {{swiperHeight}}px;">
   <block wx:for="{{bannerList}}" wx:key="bannerId">
     <swiper-item class="swiper-item">
-      <image class="swiper-image" 
+      <image 
+        class="swiper-image" 
         src="{{item.pic}}"
         bindload="handleImgLoaded"></image>
     </swiper-item>

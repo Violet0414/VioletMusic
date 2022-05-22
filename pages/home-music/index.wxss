@@ -16,9 +16,12 @@ page{
   overflow: hidden;
 }
 
-
 .swiper-item .swiper-image {
   width: 100%;
+}
+
+.recommend-song {
+  margin-top: 10rpx;
 }
 
 

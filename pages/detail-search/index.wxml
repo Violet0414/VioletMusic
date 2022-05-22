@@ -6,7 +6,9 @@
   shape="round"
   placeholder="搜索您想听的歌曲吧"
   bind:change="inputSearch"
-  bind:cancel="onCancel">
+  bind:cancel="onCancel"
+  bind:clear="onCancel"
+  bind:search="getSearch">
 </van-search>
 
 <!-- 热门搜索名词 -->
@@ -14,17 +16,28 @@
   <view class="title">热门搜索</view>
   <view class="word">
     <block wx:for="{{hotWords}}" wx:key="first">
-      <view class="tag">{{item.first}}</view>
+      <view class="tag" bindtap="handleTagClick" data-item="{{item}}">{{item.first}}</view>
     </block>
   </view>
 </view>
 
-<!-- 联想列表 -->
-<view class="suggest" wx:if="{{searchValue.length}}">
+<!-- 搜索联想列表 -->
+<view class="suggest" wx:if="{{searchValue.length && searchSong.length = 0}}">
   <view class="sTitle">搜索"{{searchValue}}"</view>
   <block wx:for="{{searchList}}" wx:key="keyword">
-    <view class="item">
+    <view class="item" bindtap="handleTagClick" data-item="{{item}}">
       <image class="img" src="../../assets/search.png"></image>{{item.keyword}}
     </view>
   </block>
+</view>
+
+<!-- 搜索结果 -->
+<view class="searchResult" wx:if="{{searchSong.length}}">
+  <view class="songList" wx:for="{{searchSong}}" wx:key="id">
+    <song-item2 
+      item="{{item}}" 
+      index="{{index + 1}}" 
+      data-item="{{item}}">
+    </song-item2>
+  </view>
 </view>
