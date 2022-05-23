@@ -1,0 +1,26 @@
+<!--pages/music-player/index.wxml-->
+<image class="bgImg" mode="aspectFill" src="{{songData.al.picUrl}}"></image>
+<view class="cover"></view>
+<view class="info">
+  <image class="img" mode="aspectFill" src="{{songData.al.picUrl}}"></image>
+  <view class="songMsg">
+    <view class="title">{{songData.al.name}}</view>
+    <view class="artName">{{songData.ar[0].name}}</view>
+    <view class="mvName">专辑：《{{"xxxx"}}》</view>
+  </view>
+  <!-- <view class="lyric">{{"我是歌词"}}</view> -->
+  <view class="progress">
+    <slider block-size="{{15}}" activeColor="red"></slider>
+    <view class="time">
+      <view class="current">01:22</view>
+      <view class="duration">04:33</view>
+    </view>
+  </view>
+  <view class="operation">
+    <image class="button" src="../../assets/播放-循环播放.png"></image>
+    <image class="button" src="../../assets/上一首.png"></image>
+    <image class="mbutton" src="../../assets/播放.png"></image>
+    <image class="button" src="../../assets/下一首.png"></image>
+    <image class="button" src="../../assets/音乐列表.png"></image>
+  </view>
+</view>

@@ -17,8 +17,8 @@
         },
         {
           "name": "",
-          "pathName": "pages/home-music/index",
-          "query": "",
+          "pathName": "pages/music-player/index",
+          "query": "id=1947948874",
           "launchMode": "default",
           "scene": null
         }

@@ -22,7 +22,7 @@
 </view>
 
 <!-- 搜索联想列表 -->
-<view class="suggest" wx:if="{{searchValue.length && searchSong.length = 0}}">
+<view class="suggest" wx:if="{{searchValue.length && searchSong.length == 0}}">
   <view class="sTitle">搜索"{{searchValue}}"</view>
   <block wx:for="{{searchList}}" wx:key="keyword">
     <view class="item" bindtap="handleTagClick" data-item="{{item}}">

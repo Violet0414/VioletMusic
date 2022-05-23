@@ -10,17 +10,18 @@ Component({
     }
   },
 
-  /**
-   * 组件的初始数据
-   */
+
   data: {
 
   },
 
-  /**
-   * 组件的方法列表
-   */
-  methods: {
 
+  methods: {
+    linkPlayer(event) {
+      const id = event.currentTarget.dataset.item.id
+      wx.navigateTo({
+        url: '/pages/music-player/index?id=' + id,
+      })
+    }
   }
 })
